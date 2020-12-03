@@ -16,7 +16,7 @@ fun main() {
     traverse(grid, 1, 2)
 }
 
-fun traverse(grid: ArrayList<String>, right: Int, down: Int) {
+fun traverse(grid: List<String>, right: Int, down: Int) {
     var treeCount = 0
     var x = 0
     var y = 0
@@ -34,10 +34,6 @@ fun traverse(grid: ArrayList<String>, right: Int, down: Int) {
     println(treeCount)
 }
 
-fun readFile(filePath: String): ArrayList<String> {
-    val lines = arrayListOf<String>()
-
-    File(filePath).forEachLine { lines.add(it) }
-
-    return lines
+fun readFile(filePath: String): List<String> {
+    return File(filePath).readLines()
 }

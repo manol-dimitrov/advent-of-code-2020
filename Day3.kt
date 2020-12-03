@@ -3,7 +3,7 @@ package day3
 import java.io.File
 
 fun main() {
-    val grid = readFile("src/main/kotlin/Day3/day3.txt")
+    val grid = readFile("day3.txt")
 
     //part A
     traverse(grid, 3, 1)

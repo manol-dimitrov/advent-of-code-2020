@@ -1,3 +1,5 @@
+package day2
+
 import java.io.File
 
 fun main() {
@@ -7,7 +9,7 @@ fun main() {
     validate(values, "B")
 }
 
-private fun validate(values: ArrayList<String>, part: CharSequence) {
+private fun validate(values: List<String>, part: CharSequence) {
     var counter = 0
 
     for (value in values) {
@@ -42,10 +44,6 @@ private fun validate(values: ArrayList<String>, part: CharSequence) {
     println(counter)
 }
 
-fun readFile(filePath: String): ArrayList<String> {
-    val lines = arrayListOf<String>()
-
-    File(filePath).forEachLine { lines.add(it) }
-
-    return lines
+fun readFile(filePath: String): List<String> {
+    return File(filePath).readLines()
 }

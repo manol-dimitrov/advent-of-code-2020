@@ -2,6 +2,6 @@
 
 Advent of Code 2020
 
-1. [Day 1](https://adventofcode.com/2020/day/1) Approach – Sort array, then use two pointers to walk through it
-2. [Day 2](https://adventofcode.com/2020/day/2) Approach – Nothing special...
-3. [Day 3](https://adventofcode.com/2020/day/3) Approach – Read file into a list, go through the list incrementing x & y by right and down
+1. [Day 1](https://adventofcode.com/2020/day/1) – Sort array, then use two pointers to walk through it
+2. [Day 2](https://adventofcode.com/2020/day/2) – Nothing special...
+3. [Day 3](https://adventofcode.com/2020/day/3) – Load input into grid, go through the grid/list incrementing x with right value & y with down value
